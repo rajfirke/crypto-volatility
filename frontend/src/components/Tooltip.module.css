@@ -1,0 +1,63 @@
+.container {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+}
+
+.infoIcon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 14px;
+  height: 14px;
+  margin-left: 4px;
+  font-size: 11px;
+  color: var(--text-3);
+  cursor: help;
+  transition: color 0.2s;
+}
+
+.infoIcon:hover {
+  color: var(--text-1);
+}
+
+.tooltip {
+  position: absolute;
+  z-index: 1000;
+  padding: 8px 12px;
+  background: var(--bg-2);
+  border: 1px solid var(--border-2);
+  border-radius: 6px;
+  font-size: 12px;
+  line-height: 1.4;
+  color: var(--text-2);
+  white-space: nowrap;
+  max-width: 280px;
+  white-space: normal;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  pointer-events: none;
+}
+
+.tooltip.top {
+  bottom: calc(100% + 6px);
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.tooltip.bottom {
+  top: calc(100% + 6px);
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.tooltip.left {
+  right: calc(100% + 6px);
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.tooltip.right {
+  left: calc(100% + 6px);
+  top: 50%;
+  transform: translateY(-50%);
+}

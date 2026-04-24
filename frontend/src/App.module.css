@@ -1,0 +1,143 @@
+.shell {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden;
+  background: var(--bg);
+}
+
+/* ── Header ── */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  height: 48px;
+  background: var(--bg-2);
+  border-bottom: 1px solid var(--border);
+  flex-shrink: 0;
+  gap: 12px;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: .01em;
+  white-space: nowrap;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--green);
+  box-shadow: 0 0 6px var(--green);
+  flex-shrink: 0;
+}
+
+.meta {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.timestamp {
+  font-size: 11px;
+  color: var(--text-3);
+  font-family: var(--mono);
+}
+
+.refreshNote {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  color: var(--text-2);
+}
+
+.cd {
+  font-family: var(--mono);
+  font-size: 12px;
+  color: var(--blue);
+  min-width: 28px;
+}
+
+.scanNow {
+  font-size: 11px;
+  color: var(--blue);
+  background: var(--blue-dim);
+  border: 1px solid rgba(79,142,245,0.25);
+  border-radius: var(--radius);
+  padding: 3px 9px;
+}
+.scanNow:hover { opacity: 0.8; }
+
+/* ── Error banner ── */
+.error {
+  padding: 10px 20px;
+  background: var(--red-dim);
+  border-bottom: 1px solid rgba(240,79,90,0.2);
+  color: var(--red);
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+/* ── Empty / waiting state ── */
+.empty {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.emptyIcon {
+  font-size: 40px;
+  color: var(--text-3);
+  line-height: 1;
+  animation: pulse 3s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 0.4; }
+  50%       { opacity: 1;   }
+}
+
+.emptyTitle {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.emptyText {
+  font-size: 13px;
+  color: var(--text-2);
+  max-width: 440px;
+  line-height: 1.6;
+}
+
+.bigScanBtn {
+  margin-top: 8px;
+  padding: 11px 28px;
+  background: var(--blue);
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: var(--radius-lg);
+}
+.bigScanBtn:hover { opacity: 0.88; }
+
+/* ── Results layout ── */
+.results {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}

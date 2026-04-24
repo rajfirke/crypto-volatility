@@ -1,0 +1,52 @@
+.wrap {
+  padding: 12px 20px;
+  background: var(--bg-2);
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1;
+  gap: 12px;
+}
+
+.phase {
+  font-size: 12px;
+  color: var(--text-2);
+}
+
+.counter {
+  font-family: var(--mono);
+  font-size: 12px;
+  color: var(--text-3);
+  white-space: nowrap;
+}
+
+.track {
+  width: 200px;
+  height: 4px;
+  background: var(--border);
+  border-radius: 2px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.fill {
+  height: 100%;
+  background: var(--blue);
+  border-radius: 2px;
+  transition: width 0.3s ease;
+}
+
+.pct {
+  font-family: var(--mono);
+  font-size: 12px;
+  color: var(--blue);
+  min-width: 36px;
+  text-align: right;
+}

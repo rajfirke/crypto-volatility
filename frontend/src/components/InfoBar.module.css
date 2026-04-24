@@ -1,0 +1,68 @@
+.bar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 20px;
+  background: var(--bg-2);
+  border-bottom: 1px solid var(--border);
+  flex-wrap: wrap;
+}
+
+.loading {
+  font-size: 13px;
+  color: var(--text-3);
+}
+
+.pills {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  flex: 1;
+}
+
+.pill {
+  display: flex;
+  flex-direction: column;
+  padding: 6px 12px;
+  border-radius: var(--radius);
+  border: 1px solid transparent;
+  min-width: 90px;
+}
+
+.pillLabel {
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  color: var(--text-3);
+  margin-bottom: 2px;
+}
+
+.pillValue {
+  font-family: var(--mono);
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.blue  { background: var(--blue-dim);   border-color: rgba(79,142,245,0.2);  }
+.blue .pillValue  { color: var(--blue); }
+.green { background: var(--green-dim);  border-color: rgba(34,212,122,0.2);  }
+.green .pillValue { color: var(--green); }
+.red   { background: var(--red-dim);    border-color: rgba(240,79,90,0.2);   }
+.red .pillValue   { color: var(--red); }
+.amber { background: var(--amber-dim);  border-color: rgba(245,166,35,0.2);  }
+.amber .pillValue { color: var(--amber); }
+.purple{ background: var(--purple-dim); border-color: rgba(167,139,250,0.2); }
+.purple .pillValue{ color: var(--purple); }
+
+.scanBtn {
+  padding: 9px 20px;
+  background: var(--blue);
+  color: #fff;
+  border-radius: var(--radius);
+  font-size: 13px;
+  font-weight: 600;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.scanBtn:hover:not(:disabled) { opacity: 0.88; }
