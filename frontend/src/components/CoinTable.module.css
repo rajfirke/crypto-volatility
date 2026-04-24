@@ -31,6 +31,9 @@
   border: 1px solid var(--border);
   color: var(--text-2);
   transition: all .15s;
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
 }
 .sortBtn:hover:not(:disabled), .patBtn:hover { border-color: var(--border-2); color: var(--text); }
 .sortBtn.active { background: var(--bg-4); color: var(--text); border-color: var(--border-2); font-weight: 500; }

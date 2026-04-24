@@ -105,9 +105,11 @@ export default function CoinTable({ coins }) {
               key={s.id}
               className={`${styles.sortBtn} ${sort === s.id ? styles.active : ''}`}
               onClick={() => setSort(s.id)}
-              title={SORT_DESCRIPTIONS[s.id] || ''}
             >
               {s.label}
+              {SORT_DESCRIPTIONS[s.id] && (
+                <InfoIcon text={SORT_DESCRIPTIONS[s.id]} position="bottom" />
+              )}
             </button>
           ))}
         </div>
@@ -120,9 +122,11 @@ export default function CoinTable({ coins }) {
                 className={`${styles.patBtn} ${patFilter === p ? styles.patActive : ''}`}
                 onClick={() => setPatFilter(p)}
                 style={patFilter === p && p !== 'all' ? { color: meta.color, borderColor: meta.color, background: meta.bg } : {}}
-                title={p !== 'all' ? PATTERN_DESCRIPTIONS[p] : 'Show all patterns'}
               >
                 {p}
+                {p !== 'all' && PATTERN_DESCRIPTIONS[p] && (
+                  <InfoIcon text={PATTERN_DESCRIPTIONS[p]} position="bottom" />
+                )}
               </button>
             )
           })}

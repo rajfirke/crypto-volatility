@@ -10,11 +10,12 @@
   justify-content: center;
   width: 14px;
   height: 14px;
-  margin-left: 4px;
+  margin-left: 3px;
   font-size: 11px;
   color: var(--text-3);
   cursor: help;
   transition: color 0.2s;
+  flex-shrink: 0;
 }
 
 .infoIcon:hover {
@@ -32,7 +33,8 @@
   line-height: 1.4;
   color: var(--text-2);
   white-space: nowrap;
-  max-width: 280px;
+  max-width: 200px;
+  min-width: 200px;
   white-space: normal;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
   pointer-events: none;
