@@ -86,6 +86,6 @@ MIT — see [LICENSE](./LICENSE) for details.
 
 ## Disclaimer
 
-**This tool is for educational and informational purposes only.**
+**This tool is for educational and informational purposes only!**
 It does NOT provide financial advice or trading signals.
 Cryptocurrency trading carries significant risk of loss.
