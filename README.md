@@ -29,7 +29,7 @@ cd frontend
 npm install
 npm run dev
 ```
-
+ 
 Open **http://localhost:5173**
 
 > No API keys or `.env` configuration required. The scanner uses Binance public endpoints only.
