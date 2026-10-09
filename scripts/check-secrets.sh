@@ -4,7 +4,7 @@
 
 echo "🔍 Checking for potential secrets..."
 
-# Check for common secret patterns
+# Check for common secret patterns 🔐
 SECRETS_FOUND=0
 
 # Patterns to search for
