@@ -60,7 +60,7 @@ Binance REST API
 ```
 
 ---
-
+ 
 ## API Endpoints
 
 | Method | Path | Description |
@@ -72,7 +72,7 @@ Binance REST API
 
 ---
 
-## Documentation
+## Documentations
 
 See **[METRICS.md](./METRICS.md)** for a comprehensive guide to all metrics, patterns, and trading signals.
 
